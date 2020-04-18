@@ -32,7 +32,7 @@ int main() {
     cout << "La stringa da codificare ha "<< n << " bits.";
     
     // Calcoliamo quanti bit di controllo saranno necessari
-    while (pow(2,r)<= n+r) //aumento r fino a quanto 2^r non è inferiore a n+r
+    while (pow(2,r)< n+r) //aumento r fino a quanto 2^r non è inferiore a n+r
         r++;
     cout << "\nSaranno necessari "<<r<< " bits di controllo. ";
 
